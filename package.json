@@ -1,0 +1,14 @@
+{
+	"name": "recipeapp",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start-client": "cd client && yarn dev",
+		"start-server": "cd server && nodemon index.js",
+		"start": "concurrently --kill-others-on-fail \"yarn start-client\" \"yarn start-server\""
+	},
+	"dependencies": {
+		"concurrently": "^8.2.2"
+	}
+}
